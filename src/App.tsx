@@ -40,16 +40,16 @@ const App = () => {
       </div>
       <h1 className="name">{user?.firstname}</h1>
       <h1 className="lname">{user?.lastname}</h1>
-      user?.gender === "male" ?
-      {
+      {user?.gender === "male" ?
+      
         <FontAwesome
           className="super-crazy-colors"
           name="fa-duotone fa-mars"
           size="3x"
         />
-      }
+      
       :
-      {
+      
         <FontAwesome
           className="super-crazy-colors"
           name="fa-duotone fa-venus"
