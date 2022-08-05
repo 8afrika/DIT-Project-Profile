@@ -3,6 +3,7 @@ import "./App.css";
 import flower from "./components/purple-flower.jpg";
 import "./components/MainGround.css";
 import { User } from "./Interfaces";
+var FontAwesome = require("react-fontawesome");
 
 const App = () => {
   const [user, setUser] = useState<User>();
@@ -28,6 +29,8 @@ const App = () => {
 
   window.onload = () => fetchApi();
 
+  const gender = getGender();
+
   return (
     <>
       <div className="bottom-box"></div>
@@ -37,11 +40,22 @@ const App = () => {
       </div>
       <h1 className="name">{user?.firstname}</h1>
       <h1 className="lname">{user?.lastname}</h1>
-      {/* <FontAwesome
-        className="super-crazy-colors"
-        name="fa-duotone fa-venus"
-        size="3x"
-      /> */}
+      user?.gender === "male" ?
+      {
+        <FontAwesome
+          className="super-crazy-colors"
+          name="fa-duotone fa-mars"
+          size="3x"
+        />
+      }
+      :
+      {
+        <FontAwesome
+          className="super-crazy-colors"
+          name="fa-duotone fa-venus"
+          size="3x"
+        />
+      }
       <div className="multiple-attributes">
         <h2>{user?.birthday}</h2>
         <h2>{user?.email}</h2>

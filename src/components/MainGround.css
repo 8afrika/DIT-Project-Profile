@@ -46,7 +46,7 @@
 .name {
   position: absolute;
   color: #e9e8ec;
-  left: 38vw;
+  left: 43vw;
   top: 26vh;
   font-size: 57px;
   background-color: transparent;
@@ -54,7 +54,7 @@
 .lname {
   position: absolute;
   color: #e9e8ec;
-  left: 40vw;
+  left: 45vw;
   top: 32vh;
   font-size: 57px;
   background-color: transparent;
@@ -84,12 +84,13 @@
   color: #e9e8ec;
   left: 47vw;
   top: 55vh;
-  font-size: 30px;
   background-color: transparent;
 }
 
 .multiple-attributes > h2 {
   background-color: transparent;
+  font-size: 30px;
+
 }
 
 

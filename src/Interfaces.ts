@@ -5,6 +5,7 @@ export interface User {
   phone: number;
   birthday: string;
   gender: string;
+  image:ImageData;
   address: Address;
 }
 
