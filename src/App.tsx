@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import flower from "./components/purple-flower.jpg";
-import "./components/MainGround.css";
+
 import { User } from "./Interfaces";
 var FontAwesome = require("react-fontawesome");
 
