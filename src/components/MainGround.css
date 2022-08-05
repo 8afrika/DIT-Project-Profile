@@ -108,6 +108,7 @@
     height: 70vh;
     width: 96vw;
     position: absolute;
+    word-wrap: normal;
     left: 2vw;
     top: 29.5vh;
     box-shadow: 7px 7px 7px #181936, -7px -7px 7px #181936;
@@ -165,7 +166,7 @@
     position: absolute;
     color: #a51c76;
     left: 70vw;
-    top: 75vh;
+    top: 85vh;
     background-color: transparent;
    
   }
@@ -173,8 +174,10 @@
   .multiple-attributes {
     position: absolute;
     color: #e9e8ec;
-    left: 15vw;
+    word-wrap: break-word;
+    left: 10vw;
     top: 68vh;
+    word-wrap: normal;
     background-color: transparent;
   }
   

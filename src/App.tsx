@@ -29,14 +29,12 @@ const App = () => {
 
   window.onload = () => fetchApi();
 
-  const gender = getGender();
-
   return (
     <>
       <div className="bottom-box"></div>
       <div className="bottom-pink"></div>
       <div className="top-box">
-        <img src={flower} />
+        <img src={user?.image} />
       </div>
       <h1 className="name">{user?.firstname}</h1>
       <h1 className="lname">{user?.lastname}</h1>
@@ -58,8 +56,8 @@ const App = () => {
       }
       <div className="multiple-attributes">
         <h2>{user?.birthday}</h2>
-        <h2>{user?.email}</h2>
         <h2>{user?.phone}</h2>
+        <h2>{user?.email}</h2>
         <h2>{user?.address.city}</h2>
         <h2>{user?.address.country}</h2>
       </div>
